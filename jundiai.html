@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dashboard de Acesso Rápido - Equipamentos</title> 
+    <style> 
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding:20px; 
+            background-color: #f4f7f6; 
+            color: #333; 
+        } 
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 10px; 
+        } 
+        .subtitle { 
+            text-align: center; 
+            color: #7f8c8d; 
+            margin-bottom: 20px; 
+        } 
+        .equipamento-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            justify-content: center; 
+        } 
+        .equipamento-card { 
+            background-color: #ffffff; 
+            border: 1px solid #e1e8ed; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+            padding: 10px; 
+            width: 120px; 
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        } 
+        .equipamento-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+        } 
+        .equipamento-card.online { 
+            background-color: #e8f8f1; 
+            border-color: #2ecc71; 
+        } 
+        .equipamento-card.offline { 
+            background-color: #fdecea; 
+            border-color: #e74c3c; 
+        } 
+        .equipamento-card a { 
+            text-decoration: none; 
+            color: #3498db; 
+            font-weight: 700; 
+            font-size: 1.2em; 
+            margin: 10px 0; 
+            display: block; 
+        } 
+        .equipamento-card a:hover { 
+            color: #2980b9; 
+        } 
+        .ip-address { 
+            color: #000000; 
+            font-size: 0.8em; 
+            background-color: #ffffff; 
+            padding: 5px 10px; 
+            border-radius: 4px; 
+            margin-top: 5px; 
+        } 
+        .icon { 
+            font-size: 2em; 
+            margin-bottom: 5px; 
+            color: #f39c12; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h1>ACESSO JUNDIAI</h1> 
+    <p class="subtitle">Selecione um equipamento para acessar diretamente o seu endereço IP interno.</p> 
+    <div class="equipamento-grid"> 
+	<div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.19:6080/vnc.html" target="_blank">ST00000011</a> 
+        <span class="ip-address">10.5.9.19</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.20:6080/vnc.html" target="_blank">ST00000013</a> 
+        <span class="ip-address">10.5.9.20</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.21:6080/vnc.html" target="_blank">ST00000014</a> 
+        <span class="ip-address">10.5.9.21</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.22:6080/vnc.html" target="_blank">ST00000015</a> 
+        <span class="ip-address">10.5.9.22</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.9" target="_blank">ST00000016</a> 
+        <span class="ip-address">10.5.9.9</span> 
+    </div> 
+     <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.24:6080/vnc.html" target="_blank">ST00000017</a> 
+        <span class="ip-address">10.5.9.24</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.7" target="_blank">ST00000018</a> 
+        <span class="ip-address">10.5.9.7</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.10" target="_blank">ST00000019</a> 
+        <span class="ip-address">10.5.9.10</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.12" target="_blank">ST00000022</a> 
+        <span class="ip-address">10.5.9.12</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.13" target="_blank">ST00000024</a> 
+        <span class="ip-address">10.5.9.13</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.11" target="_blank">ST00000026</a> 
+        <span class="ip-address">10.5.9.11</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.14" target="_blank">ST00000027</a> 
+        <span class="ip-address">10.5.9.14</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.15" target="_blank">ST00000028</a> 
+        <span class="ip-address">10.5.9.15</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.17"  target="_blank">ST00000029</a> 
+        <span class="ip-address">10.5.9.17</span> 
+    </div> 
+	<div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.26:6080/vnc.html" target="_blank">ST00000031</a> 
+        <span class="ip-address">10.5.9.26</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.16" target="_blank">ST00000390</a> 
+        <span class="ip-address">10.5.9.16</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.9.18" target="_blank">ST00000404</a> 
+        <span class="ip-address">10.5.9.18</span> 
+    </div> 
+    <div class="equipamento-card"> 
+        <span class="icon">💻</span> 
+        <a href="http://10.5.255.3" target="_blank">ST0000010</a> 
+        <span class="ip-address">10.5.255.3</span> 
+    </div> 
+</div> 
+    <script> 
+        async function checkHost(card, url) { 
+            try { 
+                const controller = new AbortController(); 
+                const timeout = setTimeout(() => controller.abort(), 3000); 
+                const response = await fetch(url, { 
+                    mode: 'no-cors', 
+                    signal: controller.signal 
+                }); 
+                clearTimeout(timeout); 
+                card.classList.remove('offline'); 
+                card.classList.add('online'); 
+            } catch (e) { 
+                card.classList.remove('online'); 
+                card.classList.add('offline');            } 
+        } 
+        function checkAllHosts() { 
+            const cards = document.querySelectorAll('.equipamento-card'); 
+            cards.forEach(card => { 
+                const link = card.querySelector('a'); 
+                if (link && link.href) { 
+                    checkHost(card, link.href); 
+                } 
+            }); 
+        } 
+        window.addEventListener('load', () => { 
+            checkAllHosts(); 
+            setInterval(checkAllHosts, 60000); 
+        }); 
+    </script> 
+</body> 
+</html> 
